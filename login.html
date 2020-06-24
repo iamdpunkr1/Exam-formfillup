@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam</title>
+    <link rel="stylesheet" href="style.css">
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">      
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
+</head>
+<body class="grey lighten-4">
+     <!--header-->
+  <header>
+    <div class="top">
+         <ul class="topmost">
+           <li> Support (Form 10 AM to 4 PM)</li> 
+           <li>Email:scteexam@gmail.com</li>
+         </ul>
+    </div>
+</header>
+    <nav class="nav-extended ">
+        <div class="nav-wrapper indigo ">
+          <a href="/index.html" class="brand">EXAM FORM FILLUP</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <span>
+        <div class="log container ">
+            <div class="page active card-panel"  data-tilt>
+              <h5 class="fhead">Login</h5>
+              <form id="std-login">
+               <div class="input-field ">
+                <input id="arn" type="text" name="name" class="validate" required>
+                <label for="arn">ARN</label>
+              </div>
+               <div class="input-field ">
+                 <input id="password_inp" type="password" name="password"  class="validate" required>
+                 <label for="password_inp">Password</label>
+               </div>
+                <button class="btn indigo waves-effect waves-light login center-align">Login</button>
+                <p class="error pink-text"></p>
+              </form>
+               <br>
+               <br>
+            </div>
+           </div>
+      </span>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"></script>
+      <script src="tilt.jquery.js"></script>
+
+         <!-- Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script>
+               document.addEventListener('DOMContentLoaded', function() {
+                  var elems = document.querySelectorAll('.sidenav');
+                   M.Sidenav.init(elems);
+
+                  });
+
+                  $(document).ready(function(){
+                    $('.card-panel').tilt({
+
+    maxTilt: 5
+})
+                  })
+        // parameters: event
+         </script>
+
+</body>
+</html>
